@@ -7,16 +7,16 @@ const Genres = ({ data, className }) => {
     <>
       <div className={`${className || ""}`}>
         {data?.map((g) => {
-          if (!genres[g]?.name) return;
+          if (!genres[g]?.name) return null;
+
           return (
-            <>
-              <div
-                key={g.name}
-                className="bg-blue-900 px-[6px] py-[2px] rounded-md"
-              >
+            <React.Fragment key={g}>
+              {" "}
+              {/* Use g as the key because it's the genre ID */}
+              <div className="bg-blue-900 px-[6px] py-[2px] rounded-md">
                 {genres[g]?.name}{" "}
               </div>
-            </>
+            </React.Fragment>
           );
         })}
       </div>
@@ -25,4 +25,3 @@ const Genres = ({ data, className }) => {
 };
 
 export default Genres;
-
