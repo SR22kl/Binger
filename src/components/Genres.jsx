@@ -11,7 +11,6 @@ const Genres = ({ data, className }) => {
 
           return (
             <React.Fragment key={g}>
-              {/* Use g as the key because it's the genre ID */}
               <div className="bg-blue-900 px-[6px] py-[2px] rounded-md">
                 {genres[g]?.name}{" "}
               </div>
