@@ -437,7 +437,7 @@ Accessible, beautiful components are available in `src/components/ui/`:
 1. **Clone & Install**
 
    ```bash
-   git clone <repo-url>
+   git clone <https://github.com/SR22kl/Binger.git>
    cd Binger
    npm install
    ```
